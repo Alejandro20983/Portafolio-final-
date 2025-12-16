@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Por qué soy programador? — Portafolio</title>
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<!-- HEADER COMPARTIDO -->
+<header class="navbar">
+  <div class="nav-container">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+      🌙
+    </button>
+    
+
+    <div class="logo">NA</div>
+
+    <!-- Botón hamburguesa -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="quien-soy.html">¿Quién soy?</a>
+      <a href="por-que-programador.html" class="active">¿Por qué soy programador?</a>
+      <a href="hobbies.html">Hobbys</a>
+      <a href="habilidades.html">Habilidades</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- CONTENIDO DE LA PÁGINA -->
+<main class="container">
+  <section class="card">
+    <h1>¿Por qué soy programador?</h1>
+    <p>
+      La programación representa para mí una forma de crear, aprender y
+      resolver problemas reales usando la tecnología como herramienta.
+    </p>
+
+    <!-- Tarjetas de razones -->
+    <div class="reason-cards">
+
+      <div class="reason-card">
+        <div class="reason-icon">💡</div>
+        <h3>Pasión por la tecnología</h3>
+        <p>
+          Me motiva entender cómo funcionan las cosas y construir soluciones
+          utilizando tecnología moderna.
+        </p>
+      </div>
+
+      <div class="reason-card">
+        <div class="reason-icon">🧩</div>
+        <h3>Resolución de problemas</h3>
+        <p>
+          Disfruto enfrentar desafíos lógicos y encontrar soluciones
+          eficientes y bien estructuradas.
+        </p>
+      </div>
+
+      <div class="reason-card">
+        <div class="reason-icon">🚀</div>
+        <h3>Crecimiento constante</h3>
+        <p>
+          La programación me impulsa a aprender todos los días y a mejorar
+          tanto a nivel personal como profesional.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Timeline personal -->
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <h3>Primer contacto</h3>
+          <p>
+            Descubrí la programación como una manera de crear y entender
+            el mundo digital.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <h3>Aprendizaje continuo</h3>
+          <p>
+            Comencé a estudiar desarrollo web y otras tecnologías,
+            desarrollando habilidades técnicas constantemente.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <h3>Objetivo profesional</h3>
+          <p>
+            Mi meta es crecer como desarrollador full stack y crear
+            soluciones que aporten valor real.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+</main>
+
+<script src="js/main.js"></script>
+<script>
+  // Script hamburguesa
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

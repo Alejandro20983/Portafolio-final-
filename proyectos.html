@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Proyectos — Portafolio</title>
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR (usar la versión mejorada que ya aplicamos) -->
+  <header class="navbar">
+    <div class="nav-container">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+      🌙
+      </button>
+      <div class="logo">NA</div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="quien-soy.html">¿Quién soy?</a>
+        <a href="por-que-programador.html">¿Por qué soy programador?</a>
+        <a href="hobbies.html">Hobbys</a>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Mis Proyectos</h1>
+      <p>A continuación algunos proyectos destacados. Haz clic en <em>Ver demo</em> o <em>Repositorio</em> para más detalles.</p>
+
+      <div class="projects-grid">
+
+        <!-- Tarjeta Proyecto 1 -->
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="assets/images/project-1.jpg" alt="Proyecto 1">
+            <div class="overlay">
+              <a class="btn small" href="#" data-action="demo" data-url="https://ejemplo-demo-1.com" target="_blank">Ver demo</a>
+              <a class="btn small ghost" href="#" data-action="repo" data-url="https://github.com/tuusuario/proyecto-1" target="_blank">Repositorio</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Proyecto 1 — Tienda SPA</h3>
+            <p class="muted">SPA de e-commerce con carrito, filtros y pasarela de pago simulada. Stack: React + Node.js.</p>
+            <div class="project-meta">
+              <span class="badge">React</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">MongoDB</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta Proyecto 2 -->
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="assets/images/project-2.jpg" alt="Proyecto 2">
+            <div class="overlay">
+              <a class="btn small" href="#" data-action="demo" data-url="https://ejemplo-demo-2.com" target="_blank">Ver demo</a>
+              <a class="btn small ghost" href="#" data-action="repo" data-url="https://github.com/tuusuario/proyecto-2" target="_blank">Repositorio</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Proyecto 2 — Dashboard Analítico</h3>
+            <p class="muted">Dashboard con gráficos interactivos y filtros en tiempo real. Stack: React + Recharts.</p>
+            <div class="project-meta">
+              <span class="badge">React</span>
+              <span class="badge">Charts</span>
+              <span class="badge">API REST</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta Proyecto 3 -->
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="assets/images/project-3.jpg" alt="Proyecto 3">
+            <div class="overlay">
+              <a class="btn small" href="#" data-action="demo" data-url="https://ejemplo-demo-3.com" target="_blank">Ver demo</a>
+              <a class="btn small ghost" href="#" data-action="repo" data-url="https://github.com/tuusuario/proyecto-3" target="_blank">Repositorio</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Proyecto 3 — Blog Estático</h3>
+            <p class="muted">Blog estático generado con SSG, optimizado para SEO y rendimiento. Stack: Eleventy / Netlify.</p>
+            <div class="project-meta">
+              <span class="badge">HTML</span>
+              <span class="badge">CSS</span>
+              <span class="badge">SSG</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+:root {
+  /* Base */
+  --bg: #0b0b0b;
+  --text: #ffffff;
+  --card: #1a1a1a;
+  /* Navegación*/
+  --nav-bg: #000000;
+  --nav-link: #ffffff;
+  --nav-hover: #7f00ff;
+
+  /* Colores marca */
+  --rojo: #ff0033;
+  --morado: #7f00ff;
+  --accent: #ffffff;
+
+  /* Extras */
+  --shadow: rgba(255,0,0,0.3);
+}
+
+/* ===== MODO CLARO ===== */
+body.light {
+  --bg: #f5f5f5;
+  --text: #111111;
+  --card: #ffffff;
+  --rojo: #d6002b;
+  --morado: #6a00cc;
+  --accent: #111111;
+
+  --shadow: rgba(0,0,0,0.15);
+
+   --nav-bg: #ffffff;
+  --nav-link: #111111;
+  --nav-hover: #d6002b;
+}

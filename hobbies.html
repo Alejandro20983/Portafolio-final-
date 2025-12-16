@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies — Portafolio</title>
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+<!-- HEADER COMPARTIDO -->
+<header class="navbar">
+  <div class="nav-container">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+      🌙
+    </button>
+
+    <div class="logo">NA</div>
+
+    <!-- Botón hamburguesa -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="quien-soy.html">¿Quién soy?</a>
+      <a href="por-que-programador.html">¿Por qué soy programador?</a>
+      <a href="hobbies.html" class="active">Hobbys</a>
+      <a href="habilidades.html">Habilidades</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- CONTENIDO -->
+<main class="container">
+  <section class="card">
+    <h1>Mis hobbies</h1>
+    <p>
+      En mi tiempo libre disfruto de actividades que complementan
+      mi creatividad, disciplina y enfoque personal.
+    </p>
+
+    <!-- Grid de hobbies -->
+    <div class="hobbies-grid">
+
+      <div class="hobby-card">
+        <div class="hobby-icon">🎮</div>
+        <h3>Videojuegos</h3>
+        <p>Me ayudan a desarrollar pensamiento estratégico y creatividad.</p>
+      </div>
+
+      <div class="hobby-card">
+        <div class="hobby-icon">🎵</div>
+        <h3>Música</h3>
+        <p>Escuchar música me inspira y mejora mi concentración.</p>
+      </div>
+
+      <div class="hobby-card">
+        <div class="hobby-icon">📚</div>
+        <h3>Aprender</h3>
+        <p>Siempre busco aprender cosas nuevas relacionadas con tecnología.</p>
+      </div>
+
+      <div class="hobby-card">
+        <div class="hobby-icon">🏃‍♂️</div>
+        <h3>Actividad física</h3>
+        <p>El ejercicio me ayuda a mantener equilibrio mental y físico.</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<script src="js/main.js"></script>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

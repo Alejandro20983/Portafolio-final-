@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alejandro Pulido — Portafolio</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER COMPARTIDO -->
+  <header class="navbar">
+    <div class="nav-container">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+      🌙
+    </button>
+
+
+      <div class="logo">NA</div>
+
+      <!-- Botón hamburguesa -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="quien-soy.html">¿Quién soy?</a>
+        <a href="por-que-programador.html">¿Por qué soy programador?</a>
+        <a href="hobbies.html">Hobbys</a>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="container hero">
+    <div class="hero-content">
+      <h1 class="hero-fade delay-1">Hola, soy <span class="highlight">Alejandro Pulido</span></h1>
+      <p class="hero-fade delay-2">Desarrollador Full Stack apasionado por crear soluciones web, software de escritorio y aplicaciones móviles.</p>
+
+      <div class="hero-socials hero-fade delay-4">
+        <a href="https://github.com/tuusuario" target="_blank" class="social-link">🐙 GitHub</a>
+        <a href="https://linkedin.com/in/tuusuario" target="_blank" class="social-link">💼 LinkedIn</a>
+        <a href="mailto:correo@ejemplo.com" class="social-link">✉️ Email</a>
+      </div>
+
+      <a href="proyectos.html" class="btn btn-hero hero-fade delay-3">Ver mis proyectos</a>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Script hamburguesa
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>

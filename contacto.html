@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Portafolio</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER COMPARTIDO -->
+  <header class="navbar">
+    <div class="nav-container">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+      🌙
+      </button>
+
+      <div class="logo">NA</div>
+
+      <!-- Botón hamburguesa -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="quien-soy.html">¿Quién soy?</a>
+        <a href="por-que-programador.html">¿Por qué soy programador?</a>
+        <a href="hobbies.html">Hobbys</a>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="contacto.html" class="active">Contacto</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- CONTENIDO DE LA PÁGINA -->
+  <main class="container">
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section class="card">
+      <h1>Contacto</h1>
+      <p>Envíame un mensaje y me pondré en contacto contigo.</p>
+
+      <form id="contact-form" class="contact-form">
+
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tu nombre completo"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="correo@ejemplo.com"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="5"
+            placeholder="Escribe tu mensaje..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn" id="submit-btn">
+          <span class="btn-text">Enviar mensaje</span>
+          <span class="btn-loader"></span>
+        </button>
+        <p class="form-status" id="form-status"></p>
+
+      </form>
+    </section>
+
+    <!-- SECCIÓN DEL CV -->
+    <section class="card">
+  <h1>Currículum</h1>
+  <p>Puedes descargar mi CV o subir uno nuevo para pruebas locales.</p>
+
+  <!-- Botón de descarga -->
+  <a class="btn" id="cv-download" href="cv/mi-cv.pdf" download>
+    Descargar CV
+  </a>
+
+  <!-- Formulario de subida -->
+  <form id="cv-upload" class="contact-form" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="cv-file">Subir CV:</label>
+      <input type="file" id="cv-file" name="cv-file" accept=".pdf" required>
+    </div>
+    <button type="submit" class="btn btn-ghost" id="cv-submit">
+      <span class="btn-text">Subir</span>
+      <span class="btn-loader"></span>
+    </button>
+    <p class="form-status" id="cv-status"></p>
+  </form>
+</section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Script hamburguesa
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>
